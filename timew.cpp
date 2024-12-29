@@ -18,12 +18,12 @@ bwoh:
 			std::cin >> input;
 			minutes = std::stoi(input) + 1;
 			while(--minutes) {
-				text.open("timewText.txt", std::ios::out);
+				text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 				text << "Starting in:\n" << minutes << " minutes";
 				text.close();
 				std::this_thread::sleep_until(std::chrono::system_clock::now() + std::chrono::minutes(1));
 			}
-			text.open("timewText.txt", std::ios::out);
+			text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 			text<< "\nThe goober should start any minute now! UwU";
 			text.close();
 		} else if (input == "s") {
@@ -31,12 +31,12 @@ bwoh:
 			std::cin >> input;
 			minutes = std::stoi(input) + 1;
 			while(--minutes) {
-				text.open("timewText.txt", std::ios::out);
+				text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 				text << "Time until next break:\n" << minutes << " minutes";
 				text.close();
 				std::this_thread::sleep_until(std::chrono::system_clock::now() + std::chrono::minutes(1));
 			}
-			text.open("timewText.txt", std::ios::out);
+			text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 			text<< "\nThe goober should start the next break any minute now! UwU";
 			text.close();
 		} else if (input == "b") {
@@ -44,12 +44,12 @@ bwoh:
 			std::cin >> input;
 			minutes = std::stoi(input) + 1;
 			while (--minutes) {
-				text.open("timewText.txt", std::ios::out);
+				text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 				text << "Time until next session:\n" << minutes << " minutes";
 				text.close();
 				std::this_thread::sleep_until(std::chrono::system_clock::now() + std::chrono::minutes(1));
 			}
-			text.open("timewText.txt", std::ios::out);
+			text.open("/home/mogus/.config/timew/timewText.txt", std::ios::out);
 			text<< "\nThe goober should start the next session any minute now! OwO";
 			text.close();
 		} else if (input == "q") {
